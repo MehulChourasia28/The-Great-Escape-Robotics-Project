@@ -1,8 +1,4 @@
-Below is a suggested **README.md** that you can adapt for your GitHub repository. It explains, at a code‐architecture level, what each source file does and how to tie them together in a `Main.ino` (or equivalent) to run any of the four behaviors (Line Following, Wall Following, Lava Pit, Steps). Pin‐wiring, power, or other physical‐robot details have been intentionally omitted.
-
----
-
-# Robot Behaviors Repository
+# How-To Guide
 
 This repository contains several independent “behavior modules” (Line Following, Wall Following, Lava Pit, Steps) plus a shared kill‐switch/remote‐stop utility. Each behavior is implemented in its own pair of `.h` and `.cpp` files. You can pick which behavior to run by simply calling its setup/loop functions from `Main.ino`.
 
@@ -514,8 +510,4 @@ That’s it—**no need to change any of the existing modules**. Each module onl
 
    * For **1 (Line Following)** or **3 (Lava Pit)** or **4 (Steps)**: leave the Serial Monitor at **115200**.
    * For **2 (Wall Following)**: once you see “Wall-follower starting…”, switch your Serial Monitor to **9600** to see its debug prints.
-7. **Use the Physical Button (pin 2)** or send a UDP packet to port 55500 containing exactly the ASCII text `Stop` (no newline) to pause/resume motors at any time, regardless of which behavior is running.
-
----
-
-That completes the detailed README explaining each file’s role, combined usage in a single `Main.ino`, and how to run any behavior without worrying about pin‐wiring or robot‐specific details.
+7. **Use the Physical Button** or send a UDP packet to port 55500 containing exactly the ASCII text `Stop` (no newline) to pause/resume motors at any time, regardless of which behavior is running.
