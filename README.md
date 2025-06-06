@@ -2,8 +2,6 @@
 
 This repository contains several independent “behavior modules” (Line Following, Wall Following, Lava Pit, Steps) plus a shared kill‐switch/remote‐stop utility. Each behavior is implemented in its own pair of `.h` and `.cpp` files. You can pick which behavior to run by simply calling its setup/loop functions from `Main.ino`.
 
-> **Note:** All of these modules assume the same C++/Arduino toolchain. If you already have an Arduino (or ESP32, etc.) project, just drop these files into your sketch folder and then create a `Main.ino` that picks which behavior to run.
-
 ---
 
 ## Repository Layout
