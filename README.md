@@ -56,7 +56,7 @@ Below is a brief summary of what each file does and how it fits into the system.
 
 **Key Details:**
 
-* Requires `<WiFi.h>` and `<WiFiUdp.h>` (ESP32/ESP8266 or similar).
+* Requires `<WiFi.h>` and `<WiFiUdp.h>`.
 * Instantiates a single `MotoronI2C mc(0x10);` and repeatedly (every `CMD_INTERVAL`) re‐issues `mc.setSpeed(…)` if `motorRunning == true && wifiStopped == false`.
 * Physical‐button logic uses `pinMode(buttonPin, INPUT_PULLUP)` and edge‐detects a HIGH→LOW transition to toggle.
 * UDP logic listens on a fixed port (55500) and stops motors whenever a packet containing exactly `"Stop"` arrives.
