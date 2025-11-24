@@ -1,3 +1,9 @@
+![alt text](https://github.com/MehulChourasia28/The-Great-Escape-Robotics-Project/blob/main/image/SchemDiagT3Rob.jpg)
+![alt text](https://github.com/MehulChourasia28/The-Great-Escape-Robotics-Project/blob/main/image/Schematic%20Diagram.jpg)
+![alt_text](https://github.com/MehulChourasia28/The-Great-Escape-Robotics-Project/blob/main/image/robot1.JPG)
+![alt_text](https://github.com/MehulChourasia28/The-Great-Escape-Robotics-Project/blob/main/image/robot2.JPG)
+![alt_text](https://github.com/MehulChourasia28/The-Great-Escape-Robotics-Project/blob/main/image/schemes.jpg)
+
 # How-To Guide
 
 This repository contains several independent “behavior modules” (Line Following, Wall Following, Lava Pit, Steps) plus a shared kill‐switch/remote‐stop utility. Each behavior is implemented in its own pair of `.h` and `.cpp` files. You can pick which behavior to run by simply calling its setup/loop functions from `Main.ino`.
